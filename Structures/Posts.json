@@ -70,7 +70,7 @@
   {
     "title": "Начало работы с Wex",
     "description": "Подключение библиотеки и создание первого реактивного компонента.",
-    "link": "/Pages/BlogPage.html",
+    "link": "#/post?id=2",
     "image": {
       "full": "/Photos/Blog/BlogImage_3.png",
       "alt": "Начало работы с Wex"
@@ -94,9 +94,9 @@
   {
     "title": "Wex и jQuery",
     "description": "Современная реактивность на фундаменте проверенной временем библиотеки.",
-    "link": "/Pages/WexPage.html",
+    "link": "Pages/WexPage.html",
     "image": {
-      "full": "/Photos/Posts/Screenshot_4.png",
+      "full": "Photos/Posts/Screenshot_4.png",
       "alt": "Wex и jQuery"
     },
     "post": "Полное описание поста на данный момент отсутствует.",
@@ -111,9 +111,9 @@
   {
     "title": "Компоненты в Wex",
     "description": "Создавайте переиспользуемые компоненты для быстрых и удобных интерфейсов.",
-    "link": "/Pages/WexPage.html",
+    "link": "Pages/WexPage.html",
     "image": {
-      "full": "/Photos/Posts/Screenshot_5.png",
+      "full": "Photos/Posts/Screenshot_5.png",
       "alt": "Компоненты Wex"
     },
     "post": "Полное описание поста на данный момент отсутствует.",
@@ -128,9 +128,9 @@
   {
     "title": "Почему Wex?",
     "description": "Простой API, реактивность и огромный арсенал возможностей jQuery.",
-    "link": "/Pages/WexPage.html",
+    "link": "Pages/WexPage.html",
     "image": {
-      "full": "/Photos/Posts/Screenshot_6.png",
+      "full": "Photos/Posts/Screenshot_6.png",
       "alt": "Почему Wex"
     },
     "post": "Полное описание поста на данный момент отсутствует.",
@@ -142,7 +142,7 @@
       "children": [
         {
           "author": "Лев Толстой",
-          "avatar": "/Photos/Tolstoy.png",
+          "avatar": "Photos/Tolstoy.png",
           "text": "Очень интересная библиотека!",
           "replies": []
         }
