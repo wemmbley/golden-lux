@@ -1,0 +1,114 @@
+<template>
+    <div class="py-16 px-4 flex flex-col items-center">
+        <div class="flex flex-col items-center mb-12 text-center">
+            <h1 class="text-[40px] text-zinc-800 font-medium max-w-[530px] leading-tight">
+                Ознакомьтесь с нашими последними постами
+            </h1>
+        </div>
+
+        <div class="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <!-- ЯЧЕЙКА 1: большая слева -->
+            <div w-if="posts[0]"
+                 class="bg-zinc-50 border border-zinc-200 rounded-[18px] flex flex-col group hover:border-zinc-300 transition duration-300 row-span-1 md:row-span-2 h-full overflow-hidden hover:-translate-y-1 hover:shadow-sm">
+                <img w-src="posts[0].image.full"
+                     alt="{{ posts[0].image.alt }}"
+                     class="w-full h-52 object-cover rounded-2xl"/>
+                <div class="p-6 flex flex-col">
+                    <div class="flex items-center gap-3 mb-4 text-sm text-zinc-600">
+                        <span>{{ posts[0].date }}</span>
+                        <div class="w-px h-3 bg-zinc-600"></div>
+                        <div class="flex items-center gap-1.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"/><path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/></svg>
+                            <span>{{ posts[0].views }}</span>
+                        </div>
+                    </div>
+                    <a href="{{ posts[0].link }}" class="block">
+                        <h2 class="text-lg/6.5 text-zinc-800 font-medium max-w-[360px] mb-3 hover:underline">
+                            {{ posts[0].title }}
+                        </h2>
+                    </a>
+                    <p class="text-sm/5 font-light text-zinc-600 mb-5 max-w-[370px]">
+                        {{ posts[0].description }}
+                    </p>
+                    <a href="{{ posts[0].link }}"
+                       class="w-fit border border-zinc-200 text-zinc-600 rounded-full px-5 py-1.5 text-sm hover:bg-zinc-100 transition-colors">
+                        Читать далее
+                    </a>
+                </div>
+            </div>
+
+            <!-- ЯЧЕЙКА 2: маленькая справа сверху -->
+            <div w-if="posts[1]"
+                 class="bg-zinc-50 border border-zinc-200 rounded-[18px] flex flex-col sm:flex-row gap-5 group hover:border-zinc-300 transition duration-300 overflow-hidden hover:-translate-y-1 hover:shadow-sm">
+                <img w-src="posts[1].image.full"
+                     alt="{{ posts[1].image.alt }}"
+                     class="w-full sm:w-[220px] lg:w-[260px] h-48 sm:h-auto object-cover rounded-2xl"/>
+                <div class="flex flex-col py-3 md:py-5 pr-2 max-md:pl-4">
+                    <div class="flex items-center gap-3 mb-4 text-sm text-zinc-600">
+                        <span>{{ posts[1].date }}</span>
+                        <div class="w-px h-3 bg-zinc-600"></div>
+                        <div class="flex items-center gap-1.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"/><path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/></svg>
+                            <span>{{ posts[1].views }}</span>
+                        </div>
+                    </div>
+                    <a href="{{ posts[1].link }}" class="block">
+                        <h2 class="text-lg font-medium mb-3 hover:underline">
+                            {{ posts[1].title }}
+                        </h2>
+                    </a>
+                    <div class="mt-auto">
+                        <a href="{{ posts[1].link }}"
+                           class="inline-block border border-zinc-200 text-zinc-600 rounded-full px-5 py-1.5 text-sm hover:bg-zinc-100 transition-colors">
+                            Читать далее
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ЯЧЕЙКА 3: маленькая справа снизу -->
+            <div w-if="posts[2]"
+                 class="bg-zinc-50 border border-zinc-200 rounded-[18px] flex flex-col sm:flex-row gap-5 group hover:border-zinc-300 transition duration-300 overflow-hidden hover:-translate-y-1 hover:shadow-sm">
+                <img w-src="posts[2].image.full"
+                     alt="{{ posts[2].image.alt }}"
+                     class="w-full sm:w-[220px] lg:w-[260px] h-48 sm:h-auto object-cover rounded-2xl"/>
+                <div class="flex flex-col py-3 md:py-5 pr-2 max-md:pl-4">
+                    <div class="flex items-center gap-3 mb-4 text-sm text-zinc-600">
+                        <span>{{ posts[2].date }}</span>
+                        <div class="w-px h-3 bg-zinc-600"></div>
+                        <div class="flex items-center gap-1.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"/><path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/></svg>
+                            <span>{{ posts[2].views }}</span>
+                        </div>
+                    </div>
+                    <a href="{{ posts[2].link }}" class="block">
+                        <h2 class="text-lg font-medium mb-3 hover:underline">
+                            {{ posts[2].title }}
+                        </h2>
+                    </a>
+                    <div class="mt-auto">
+                        <a href="{{ posts[2].link }}"
+                           class="inline-block border border-zinc-200 text-zinc-600 rounded-full px-5 py-1.5 text-sm hover:bg-zinc-100 transition-colors">
+                            Читать далее
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12">
+            <a href="/blog"
+               class="border border-zinc-200 text-zinc-600 rounded-full px-6 py-2 text-sm hover:bg-zinc-100 transition-colors cursor-pointer">
+                Смотреть всё
+            </a>
+        </div>
+    </div>
+</template>
+
+<script type="module">
+    export default ($component) => $component
+        .state({
+            posts: [],
+        })
+</script>

@@ -1,0 +1,71 @@
+[
+  {
+    "name": "Инструменты",
+    "image": "https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.webp",
+    "children": [
+      {
+        "name": "CSS Библиотеки",
+        "children": [
+          {
+            "name": "GitHub Quas",
+            "link": "https://github.com/wemmbley/quas"
+          },
+          {
+            "name": "CodeBerg Quas",
+            "link": "https://codeberg.org/wemmbley/quas"
+          }
+        ]
+      },
+      {
+        "name": "JS Библиотеки",
+        "children": [
+          {
+            "name": "GitHub Wex",
+            "link": "https://github.com/wemmbley/wex"
+          },
+          {
+            "name": "CodeBerg Wex",
+            "link": "https://codeberg.org/wemmbley/wex"
+          }
+        ]
+      },
+      {
+        "name": "PHP Библиотеки",
+        "children": [
+          {
+            "name": "GitHub Neo",
+            "link": "https://github.com/wemmbley/neo"
+          },
+          {
+            "name": "CodeBerg Neo",
+            "link": "https://codeberg.org/wemmbley/neo"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Автор",
+    "image": "https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp",
+    "children": [
+      {
+        "name": "Контакты",
+        "children": [
+          {
+            "name": "Telegram",
+            "link": "https://t.me/saint_lucius",
+            "children": [
+              {
+                "name": "Дополнительный пункт"
+              }
+            ]
+          },
+          {
+            "name": "YouTube",
+            "link": "https://www.youtube.com/@RustamHolev"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,17 @@
+/* сбросить стрелку у всех кнопок: это перебивает «соседское» правило daisy */
+.megamenu [popovertarget]:after { opacity: .25; rotate: -135deg; }
+
+/* повернуть стрелку у кнопки, чья панель открыта */
+.megamenu:has([popover]:nth-of-type(1):popover-open) [popovertarget]:nth-of-type(1):after,
+.megamenu:has([popover]:nth-of-type(2):popover-open) [popovertarget]:nth-of-type(2):after,
+.megamenu:has([popover]:nth-of-type(3):popover-open) [popovertarget]:nth-of-type(3):after,
+.megamenu:has([popover]:nth-of-type(4):popover-open) [popovertarget]:nth-of-type(4):after,
+.megamenu:has([popover]:nth-of-type(5):popover-open) [popovertarget]:nth-of-type(5):after,
+.megamenu:has([popover]:nth-of-type(6):popover-open) [popovertarget]:nth-of-type(6):after,
+.megamenu:has([popover]:nth-of-type(7):popover-open) [popovertarget]:nth-of-type(7):after,
+.megamenu:has([popover]:nth-of-type(8):popover-open) [popovertarget]:nth-of-type(8):after,
+.megamenu:has([popover]:nth-of-type(9):popover-open) [popovertarget]:nth-of-type(9):after,
+.megamenu:has([popover]:nth-of-type(10):popover-open) [popovertarget]:nth-of-type(10):after {
+    opacity: 1;
+    rotate: 45deg;
+}

@@ -1,0 +1,24 @@
+<template>
+    <h1 class="mt-5 text-[40px] text-zinc-800 font-medium max-w-[530px] leading-tight">
+        {{ article.title }}
+    </h1>
+
+    <img w-src="article.image.full"
+         alt="{{ article.image.alt }}"
+         class="w-full h-52 object-cover rounded-2xl my-5"/>
+
+    <div w-html="{{ article.post }}"></div>
+
+    <Commentaries
+        :count="article.comments.count"
+        :children="article.comments.children">
+    </Commentaries>
+</template>
+
+<script type="module">
+    export default $template => $template
+        .state({
+            article: {}
+        })
+        .component('Commentaries', '/Components/Commentaries/Commentaries.html');
+</script>

@@ -1,0 +1,39 @@
+<template>
+    <div class="relative flex flex-col gap-4 max-w-72 w-full">
+        <div class="max-h-8 flex items-center border pl-3 gap-2 bg-white border-gray-500/30 h-12 rounded-md overflow-hidden">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="m15.75 15.75-3.262-3.262M14.25 8.25a6 6 0 1 1-12 0 6 6 0 0 1 12 0"
+                      stroke="#6B7280"
+                      stroke-width="1.2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+            </svg>
+            <input type="text"
+                   placeholder="Поиск"
+                   class="w-full h-full border-0 outline-none focus:outline-none text-gray-500 placeholder-gray-500 text-sm"
+            >
+        </div>
+
+        <div class="hidden absolute left-0 w-full py-3 bg-white border border-gray-500/30 rounded-md overflow-hidden"
+             w-class="{
+                'top-12': searchResult == 'bottom',
+                'bottom-10': searchResult == 'top'
+            }"
+        >
+            <h5 class="text-xs pb-2 text-gray-800/80 px-4 text-center">
+                Результаты поиска
+            </h5>
+            <p class="text-sm text-gray-500 py-1 hover:bg-gray-200/80 cursor-pointer px-4">India</p>
+            <p class="text-sm text-gray-500 py-1 hover:bg-gray-200/80 cursor-pointer px-4">Indonesia</p>
+            <p class="text-sm text-gray-500 py-1 hover:bg-gray-200/80 cursor-pointer px-4">Iran</p>
+            <p class="text-sm text-gray-500 py-1 hover:bg-gray-200/80 cursor-pointer px-4">Israel</p>
+        </div>
+    </div>
+</template>
+
+<script type="module">
+    export default ($component) => $component
+        .state({
+            searchResult: 'bottom', // or top
+        })
+</script>

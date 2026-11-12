@@ -1,0 +1,97 @@
+<template>
+    <div class="drawer">
+        <input id="main-drawer" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content">
+            <section class="max-lg:hidden">
+                <div class="megamenu megamenu-wide p-2 border border-base-300" id="main-megamenu" popover>
+                    <span class="megamenu-active"></span>
+                    <!-- кнопки верхнего уровня -->
+                    <button w-for="top,ti in menu" popovertarget="mm{{ ti }}">{{ top.name }}</button>
+                    <!-- панели (id совпадает с popovertarget) -->
+                    <div w-for="top,ti in menu" id="mm{{ ti }}" popover>
+                        <div class="flex max-sm:flex-col items-start">
+                            <ul class="menu w-full md:flex-row">
+                                <li w-for="group in top.children||[]">
+                                    <ul>
+                                        <li class="menu-title">{{ group.name }}</li>
+                                        <li w-for="leaf in group.children||[]">
+                                            <a w-if="leaf.link" href="{{ leaf.link }}">{{ leaf.name }}</a>
+                                            <span w-if="!leaf.link">{{ leaf.name }}</span>
+                                            <ul w-if="leaf.children">
+                                                <li w-for="sub in leaf.children||[]">
+                                                    <a w-if="sub.link" href="{{ sub.link }}">{{ sub.name }}</a>
+                                                    <span w-if="!sub.link">{{ sub.name }}</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <img w-if="top.image" w-src="top.image" class="md:max-w-sm max-md:w-auto" alt="{{ top.name }}" />
+                        </div>
+                    </div>
+                    <div class="ml-auto pr-5">
+                        <Searchbar></Searchbar>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="drawer-side">
+            <label for="main-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+            <div class="bg-base-200 min-h-full w-80 max-w-[85vw] flex flex-col">
+                <ul class="menu w-full flex-1 p-4">
+                    <li w-for="top in menu">
+                        <details>
+                            <summary>{{ top.name }}</summary>
+                            <ul>
+                                <li w-for="group in top.children||[]">
+                                    <details>
+                                        <summary>{{ group.name }}</summary>
+                                        <ul>
+                                            <li w-for="leaf in group.children||[]">
+                                                <a w-if="leaf.link" href="{{ leaf.link }}">{{ leaf.name }}</a>
+                                                <span w-if="!leaf.link">{{ leaf.name }}</span>
+                                                <ul w-if="leaf.children">
+                                                    <li w-for="sub in leaf.children||[]">
+                                                        <a w-if="sub.link" href="{{ sub.link }}">{{ sub.name }}</a>
+                                                        <span w-if="!sub.link">{{ sub.name }}</span>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </details>
+                                </li>
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+                <div class="sticky bottom-0 bg-base-200 p-4 border-t border-base-300">
+                    <Searchbar searchResult="top"></Searchbar>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dock lg:hidden">
+        <div w-for="item,id in mobileMenu" class="contents">
+            <label w-if="!item.link" for="main-drawer"
+                   class="flex flex-1 flex-col items-center justify-center cursor-pointer">
+                <span w-html="item.icon"></span>
+                <span class="dock-label mt-1">{{ item.name }}</span>
+            </label>
+            <a w-if="item.link" href="{{ item.link }}"
+               class="flex flex-1 flex-col items-center justify-center cursor-pointer">
+                <span w-html="item.icon"></span>
+                <span class="dock-label mt-1">{{ item.name }}</span>
+            </a>
+        </div>
+    </div>
+</template>
+
+<script type="module">
+    export default ($component) => $component
+        .state({
+            menu: [],
+            mobileMenu: [],
+        })
+        .component('Searchbar', '/Components/Searchbar.html')
+</script>

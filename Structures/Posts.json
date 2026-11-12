@@ -1,0 +1,152 @@
+[
+  {
+    "title": "Обзор возможностей Wex",
+    "description": "Wex это очень быстрая реактивная JavaScript библиотека на базе фундамента jQuery. Её задача это рендерить контент на сайте как тут.",
+    "link": "#/post?id=0",
+    "image": {
+      "full": "/Photos/Blog/BlogImage_1.png",
+      "alt": "Обзор возможностей Wex"
+    },
+    "post": "Полное описание поста на данный момент отсутствует.",
+    "date": "10 ноября, 2026 в 17:47",
+    "views": 1432,
+    "rating": 4.32,
+    "comments": {
+      "count": 5,
+      "children": [
+        {
+          "author": "Фёдор Достоевский",
+          "avatar": "/Photos/Dostoevskiy.png",
+          "text": "Отменный сайт!",
+          "replies": [
+            {
+              "author": "Лев Толстой",
+              "avatar": "/Photos/Tolstoy.png",
+              "text": "++",
+              "replies": [
+                {
+                  "author": "Лев Толстой",
+                  "avatar": "/Photos/Tolstoy.png",
+                  "text": "Кстати, прямо тут рекурсия работает, прикол?",
+                  "replies": [
+                    {
+                      "author": "Фёдор Достоевский",
+                      "avatar": "/Photos/Dostoevskiy.png",
+                      "text": "Внатуре.",
+                      "replies": [
+                        {
+                          "author": "Фёдор Достоевский",
+                          "avatar": "/Photos/Dostoevskiy.png",
+                          "text": "Я в ахуе."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "title": "Реактивность Wex",
+    "description": "Как создать интерактивный интерфейс, используя знакомый и простой API.",
+    "link": "#/post?id=1",
+    "image": {
+      "full": "/Photos/Blog/BlogImage_2.png",
+      "alt": "Реактивность Wex"
+    },
+    "post": "Полное описание второго поста на данный момент отсутствует.",
+    "date": "9 ноября, 2026",
+    "views": 982,
+    "rating": 4.56,
+    "comments": {
+      "count": 0,
+      "children": []
+    }
+  },
+  {
+    "title": "Начало работы с Wex",
+    "description": "Подключение библиотеки и создание первого реактивного компонента.",
+    "link": "/Pages/BlogPage.html",
+    "image": {
+      "full": "/Photos/Blog/BlogImage_3.png",
+      "alt": "Начало работы с Wex"
+    },
+    "post": "Полное описание поста на данный момент отсутствует.",
+    "date": "8 ноября, 2026",
+    "views": 756,
+    "rating": 4.18,
+    "comments": {
+      "count": 1,
+      "children": [
+        {
+          "author": "Антон Чехов",
+          "avatar": "/Photos/Dostoevskiy.png",
+          "text": "Интересный подход к созданию интерфейсов.",
+          "replies": []
+        }
+      ]
+    }
+  },
+  {
+    "title": "Wex и jQuery",
+    "description": "Современная реактивность на фундаменте проверенной временем библиотеки.",
+    "link": "/Pages/WexPage.html",
+    "image": {
+      "full": "/Photos/Posts/Screenshot_4.png",
+      "alt": "Wex и jQuery"
+    },
+    "post": "Полное описание поста на данный момент отсутствует.",
+    "date": "7 ноября, 2026 в 18:20",
+    "views": 1104,
+    "rating": 4.71,
+    "comments": {
+      "count": 0,
+      "children": []
+    }
+  },
+  {
+    "title": "Компоненты в Wex",
+    "description": "Создавайте переиспользуемые компоненты для быстрых и удобных интерфейсов.",
+    "link": "/Pages/WexPage.html",
+    "image": {
+      "full": "/Photos/Posts/Screenshot_5.png",
+      "alt": "Компоненты Wex"
+    },
+    "post": "Полное описание поста на данный момент отсутствует.",
+    "date": "6 ноября, 2026 в 10:45",
+    "views": 643,
+    "rating": 4.09,
+    "comments": {
+      "count": 0,
+      "children": []
+    }
+  },
+  {
+    "title": "Почему Wex?",
+    "description": "Простой API, реактивность и огромный арсенал возможностей jQuery.",
+    "link": "/Pages/WexPage.html",
+    "image": {
+      "full": "/Photos/Posts/Screenshot_6.png",
+      "alt": "Почему Wex"
+    },
+    "post": "Полное описание поста на данный момент отсутствует.",
+    "date": "5 ноября, 2026 в 16:00",
+    "views": 1897,
+    "rating": 4.84,
+    "comments": {
+      "count": 1,
+      "children": [
+        {
+          "author": "Лев Толстой",
+          "avatar": "/Photos/Tolstoy.png",
+          "text": "Очень интересная библиотека!",
+          "replies": []
+        }
+      ]
+    }
+  }
+]
