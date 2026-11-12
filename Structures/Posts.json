@@ -4,7 +4,7 @@
     "description": "Wex это очень быстрая реактивная JavaScript библиотека на базе фундамента jQuery. Её задача это рендерить контент на сайте как тут.",
     "link": "#/post?id=0",
     "image": {
-      "full": "/Photos/Blog/BlogImage_1.png",
+      "full": "Photos/Blog/BlogImage_1.png",
       "alt": "Обзор возможностей Wex"
     },
     "post": "Полное описание поста на данный момент отсутствует.",
@@ -16,27 +16,27 @@
       "children": [
         {
           "author": "Фёдор Достоевский",
-          "avatar": "/Photos/Dostoevskiy.png",
+          "avatar": "Photos/Dostoevskiy.png",
           "text": "Отменный сайт!",
           "replies": [
             {
               "author": "Лев Толстой",
-              "avatar": "/Photos/Tolstoy.png",
+              "avatar": "Photos/Tolstoy.png",
               "text": "++",
               "replies": [
                 {
                   "author": "Лев Толстой",
-                  "avatar": "/Photos/Tolstoy.png",
+                  "avatar": "Photos/Tolstoy.png",
                   "text": "Кстати, прямо тут рекурсия работает, прикол?",
                   "replies": [
                     {
                       "author": "Фёдор Достоевский",
-                      "avatar": "/Photos/Dostoevskiy.png",
+                      "avatar": "Photos/Dostoevskiy.png",
                       "text": "Внатуре.",
                       "replies": [
                         {
                           "author": "Фёдор Достоевский",
-                          "avatar": "/Photos/Dostoevskiy.png",
+                          "avatar": "Photos/Dostoevskiy.png",
                           "text": "Я в ахуе."
                         }
                       ]
@@ -55,7 +55,7 @@
     "description": "Как создать интерактивный интерфейс, используя знакомый и простой API.",
     "link": "#/post?id=1",
     "image": {
-      "full": "/Photos/Blog/BlogImage_2.png",
+      "full": "Photos/Blog/BlogImage_2.png",
       "alt": "Реактивность Wex"
     },
     "post": "Полное описание второго поста на данный момент отсутствует.",
@@ -72,7 +72,7 @@
     "description": "Подключение библиотеки и создание первого реактивного компонента.",
     "link": "#/post?id=2",
     "image": {
-      "full": "/Photos/Blog/BlogImage_3.png",
+      "full": "Photos/Blog/BlogImage_3.png",
       "alt": "Начало работы с Wex"
     },
     "post": "Полное описание поста на данный момент отсутствует.",
@@ -84,7 +84,7 @@
       "children": [
         {
           "author": "Антон Чехов",
-          "avatar": "/Photos/Dostoevskiy.png",
+          "avatar": "Photos/Dostoevskiy.png",
           "text": "Интересный подход к созданию интерфейсов.",
           "replies": []
         }
