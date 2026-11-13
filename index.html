@@ -41,14 +41,14 @@
         })
         .plugin(createRouter({ mode: 'hash' }))
         .on('$mount', (state) => {
-            $wire.get('Structures/Menu.json').to(state.menu);
-            $wire.get('Structures/MobileMenu.json').to(state.mobileMenu);
-            $wire.get('Structures/Posts.json').to(state.posts);
+            $wire.get('./Structures/Menu.json').to(state.menu);
+            $wire.get('./Structures/MobileMenu.json').to(state.mobileMenu);
+            $wire.get('./Structures/Posts.json').to(state.posts);
         })
-        .component('Menu', 'Layouts/Menu.html')
-        .component('Footer', 'Layouts/Footer.html')
-        .component('Posts', 'Components/Posts.html')
-        .component('Article', 'Components/Article.html')
+        .component('Menu', './Layouts/Menu.html')
+        .component('Footer', './Layouts/Footer.html')
+        .component('Posts', './Components/Posts.html')
+        .component('Article', './Components/Article.html')
         .mount();
 </script>
 </html>
